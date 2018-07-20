@@ -1,0 +1,9 @@
+<div id="scrapper">
+  <h1 class="title">
+    Scrape Any Website You Like
+  </h1>
+  <%= form_for @url do |f| %>
+    <%= f.text_field :url %>
+    <%= f.submit %>
+  <% end %>
+</div>
