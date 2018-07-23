@@ -2,5 +2,11 @@
   <h1 class="title">
     List of scraped websites
   </h1>
-  <%= @urls.last.website %>
+  <ul>
+    <% @urls.each do |url| %>
+    <li>
+      <%= url.website %>
+    </li>
+    <% end %>
+  </ul>
 </div>
