@@ -23,9 +23,6 @@ class UrlsController < ApplicationController
 
   end
 
-  def contents
-  end
-
   def url_params
     params.require(:url).permit(:website)
   end
